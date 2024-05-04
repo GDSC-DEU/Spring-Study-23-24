@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 40px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #666;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>메모</h1>
+<!--
+    컨트롤러에서 넘겨준 값들을 사용하고자 할 때 ${변수명}으로 작성하면 받은 값을 이용해 페이지 구성함.
+ -->
+<h2 th:text="${title}">메모 제목</h2>
+<h3 th:text="${content}">메모 내용</h3>
+<h3 th:text="${date}">date</h3>
+</body>
+</html>
