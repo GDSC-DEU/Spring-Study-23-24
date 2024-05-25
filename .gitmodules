@@ -1,3 +1,6 @@
 [submodule "김남주"]
 	path = 4주차_과제/김남주
 	url = https://github.com/cmsong111/Spring-memo-demo.git
+[submodule "강준화"]
+	path = 4주차_과제/강준화
+	url = https://github.com/Junhwakang/Todo-List.git
