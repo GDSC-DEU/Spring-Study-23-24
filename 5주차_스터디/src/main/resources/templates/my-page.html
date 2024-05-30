@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>My Page</h1>
+
+<div th:text="${username}"></div>
+
+<!--유저 정보-->
+<div th:text="${user.username}"></div>
+<div th:text="${user.password}"></div>
+<div th:text="${user.roles}"></div>
+
+
+</body>
+</html>

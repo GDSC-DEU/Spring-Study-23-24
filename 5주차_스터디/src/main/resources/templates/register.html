@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form th:action="@{/auth/register}" method="post">
+    <div>
+        <input type="text" name="username" placeholder="Username"/>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="Password"/>
+    </div>
+    <div>
+        <!--        User role-->
+        <input type="radio" name="role" value="USER" checked="checked"/> User
+        <input type="radio" name="role" value="ADMIN"/> Admin
+    </div>
+    <input type="submit" value="Register"/>
+</form>
+</body>
+</html>
